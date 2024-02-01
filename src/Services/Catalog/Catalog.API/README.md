@@ -13,3 +13,9 @@
 | POST     | api/v1/catalog                                  | Creates a new Product				  |
 | PUT      | api/v1/catalog                                  | Updates the product					  |
 | DELETE   | api/v1/catalog/{id}                             | deletes the product					  |
+
+## Catalog Service Archictecture
+
+## Coding 
+### Install MongoDB.Driver nuget package
+### 
