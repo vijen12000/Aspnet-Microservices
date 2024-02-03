@@ -8,6 +8,7 @@
    5. List the exiting databases "show dbs"
    6. Create a new CatalogDb data base "use CatalogDb"
    7. Create a new Product Collection "db.createCollection('Products')"
-   8. Insert products "[{ 'Name':'Asus Laptop','Category':'Computers', 'Summary':'Summary', 'Description':'Description', 'ImageFile':'ImageFile', 'Price':54.93 }, { 'Name':'HP Laptop','Category':'Computers', 'Summary':'Summary', 'Description':'Description', 'ImageFile':'ImageFile', 'Price':88.93 } ]"
+   8. Insert products "db.Products.insertMany()"
+   8. Sample Payload "[{ 'Name':'Asus Laptop','Category':'Computers', 'Summary':'Summary', 'Description':'Description', 'ImageFile':'ImageFile', 'Price':54.93 }, { 'Name':'HP Laptop','Category':'Computers', 'Summary':'Summary', 'Description':'Description', 'ImageFile':'ImageFile', 'Price':88.93 } ]"
    9. find products "db.Products.find([]).pretty()"       
    10 remove the products "db.Products.remove({})"

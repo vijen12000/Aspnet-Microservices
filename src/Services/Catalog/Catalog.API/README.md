@@ -18,4 +18,9 @@
 
 ## Coding 
 ### Install MongoDB.Driver nuget package
+## Containerize 
+### Right Click on the Catalog API => Go to Add => Select "Container Orchestrator Support"
+### Select Docker Compose as "Container Orchestrator"
+### Select Linux as Target OS
+### Add MongoDB to Docker Compose File
 ### 
