@@ -12,3 +12,9 @@
    8. Sample Payload "[{ 'Name':'Asus Laptop','Category':'Computers', 'Summary':'Summary', 'Description':'Description', 'ImageFile':'ImageFile', 'Price':54.93 }, { 'Name':'HP Laptop','Category':'Computers', 'Summary':'Summary', 'Description':'Description', 'ImageFile':'ImageFile', 'Price':88.93 } ]"
    9. find products "db.Products.find([]).pretty()"       
    10 remove the products "db.Products.remove({})"
+3. Basket Service
+   1. Redis
+      1. Pull Redis Image "docker pull redis"
+      2. Run Docker Image "docker run -d -p 6379:6379 --name aspnetrun-redis redis"
+      3. check the logs "docker logs -f aspnetrun-redis"
+      4. Get inside the redis image "docker exec -it aspnetrun-redis /bin/bash"
