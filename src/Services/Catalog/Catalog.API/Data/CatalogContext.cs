@@ -8,9 +8,10 @@ namespace Catalog.API.Data
 {
     public class CatalogContext : ICatalogContext        
     {
-        public CatalogContext(IOptions<DatabaseSettingOptions> databaseSettings)
+        public CatalogContext(IOptions<DatabaseSettingOptions> databaseSettings, IConfiguration configuration)
         {            
-            var client = new MongoClient(databaseSettings.Value.ConnectionString);
+            var client = new MongoClient(configuration.GetValue<string>("DatabaseSettings__ConnectionString"));
+            //var client = new MongoClient("mongodb://catalogdb:27017");
             var database = client.GetDatabase(databaseSettings.Value.DatabaseName);
             Products = database.GetCollection<Product>(databaseSettings.Value.CollectionName);
             CatalogContextSeed.SeedData(Products);

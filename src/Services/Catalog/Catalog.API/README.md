@@ -23,4 +23,4 @@
 ### Select Docker Compose as "Container Orchestrator"
 ### Select Linux as Target OS
 ### Add MongoDB to Docker Compose File
-### 
+### Sping up the containers using docker-compose "docker-compose -f .\docker-componse.yml -f .\docker-componse.override.yml up -d"
