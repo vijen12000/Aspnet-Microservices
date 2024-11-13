@@ -9,8 +9,9 @@
    6. Create a new CatalogDb data base "use CatalogDb"
    7. Create a new Product Collection "db.createCollection('Products')"
    8. Insert products "db.Products.insertMany()"
-   8. Sample Payload "[{ 'Name':'Asus Laptop','Category':'Computers', 'Summary':'Summary', 'Description':'Description', 'ImageFile':'ImageFile', 'Price':54.93 }, { 'Name':'HP Laptop','Category':'Computers', 'Summary':'Summary', 'Description':'Description', 'ImageFile':'ImageFile', 'Price':88.93 } ]"
-   9. find products "db.Products.find([]).pretty()"       
+   8. Sample Payload "db.Products.insertMany([{ 'Name':'Asus Laptop','Category':'Computers', 'Summary':'Summary', 'Description':'Description', 'ImageFile':'ImageFile', 'Price':54.93 }, { 'Name':'HP Laptop','Category':'Computers', 'Summary':'Summary', 'Description':'Description', 'ImageFile':'ImageFile', 'Price':88.93 }])"
+      "db.Products.insertMany([{ 'Name':'Asus Laptop','Category':'Computers', 'Summary':'Summary', 'Description':'Description', 'ImageFile':'ImageFile', 'Price':54.93 }, { 'Name':'HP Laptop','Category':'Computers', 'Summary':'Summary', 'Description':'Description', 'ImageFile':'ImageFile', 'Price':88.93 }])"
+   9. find products "db.Products.find({}).pretty()"       
    10 remove the products "db.Products.remove({})"
 3. Basket Service
    1. Redis
@@ -18,3 +19,7 @@
       2. Run Docker Image "docker run -d -p 6379:6379 --name aspnetrun-redis redis"
       3. check the logs "docker logs -f aspnetrun-redis"
       4. Get inside the redis image "docker exec -it aspnetrun-redis /bin/bash"
+
+
+4. Docker Componse
+    1.  Sping up the containers using docker-compose "docker-compose -f .\docker-componse.yml -f .\docker-componse.override.yml up -d"

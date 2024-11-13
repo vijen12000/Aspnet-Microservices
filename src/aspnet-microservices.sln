@@ -14,11 +14,11 @@ Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "Solution Items", "Solution 
 		..\README.md = ..\README.md
 	EndProjectSection
 EndProject
-Project("{E53339B2-1760-4266-BCC7-CA923CBCF16C}") = "docker-compose", "docker-compose.dcproj", "{F5087240-86A3-4996-AEDF-0E3F0C6EC274}"
-EndProject
 Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "Basket", "Basket", "{AF7C6369-ED98-4262-B04B-54DFE2A59E96}"
 EndProject
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Basket.API", "Services\Basket\Basket.API\Basket.API.csproj", "{532C992F-BD41-4581-A638-0166189A684E}"
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "Basket.API", "Services\Basket\Basket.API\Basket.API.csproj", "{532C992F-BD41-4581-A638-0166189A684E}"
+EndProject
+Project("{E53339B2-1760-4266-BCC7-CA923CBCF16C}") = "docker-compose", "docker-compose.dcproj", "{9FD1D51F-5CD6-41F1-806C-EBEF02877533}"
 EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
@@ -30,14 +30,14 @@ Global
 		{62D06EB3-52D5-4780-9791-004FBE34B332}.Debug|Any CPU.Build.0 = Debug|Any CPU
 		{62D06EB3-52D5-4780-9791-004FBE34B332}.Release|Any CPU.ActiveCfg = Release|Any CPU
 		{62D06EB3-52D5-4780-9791-004FBE34B332}.Release|Any CPU.Build.0 = Release|Any CPU
-		{F5087240-86A3-4996-AEDF-0E3F0C6EC274}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
-		{F5087240-86A3-4996-AEDF-0E3F0C6EC274}.Debug|Any CPU.Build.0 = Debug|Any CPU
-		{F5087240-86A3-4996-AEDF-0E3F0C6EC274}.Release|Any CPU.ActiveCfg = Release|Any CPU
-		{F5087240-86A3-4996-AEDF-0E3F0C6EC274}.Release|Any CPU.Build.0 = Release|Any CPU
 		{532C992F-BD41-4581-A638-0166189A684E}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
 		{532C992F-BD41-4581-A638-0166189A684E}.Debug|Any CPU.Build.0 = Debug|Any CPU
 		{532C992F-BD41-4581-A638-0166189A684E}.Release|Any CPU.ActiveCfg = Release|Any CPU
 		{532C992F-BD41-4581-A638-0166189A684E}.Release|Any CPU.Build.0 = Release|Any CPU
+		{9FD1D51F-5CD6-41F1-806C-EBEF02877533}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{9FD1D51F-5CD6-41F1-806C-EBEF02877533}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{9FD1D51F-5CD6-41F1-806C-EBEF02877533}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{9FD1D51F-5CD6-41F1-806C-EBEF02877533}.Release|Any CPU.Build.0 = Release|Any CPU
 	EndGlobalSection
 	GlobalSection(SolutionProperties) = preSolution
 		HideSolutionNode = FALSE

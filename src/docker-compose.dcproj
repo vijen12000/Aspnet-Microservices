@@ -3,7 +3,11 @@
   <PropertyGroup Label="Globals">
     <ProjectVersion>2.1</ProjectVersion>
     <DockerTargetOS>Linux</DockerTargetOS>
-    <ProjectGuid>f5087240-86a3-4996-aedf-0e3f0c6ec274</ProjectGuid>
+    <DockerPublishLocally>False</DockerPublishLocally>
+    <ProjectGuid>9fd1d51f-5cd6-41f1-806c-ebef02877533</ProjectGuid>
+    <DockerLaunchAction>LaunchBrowser</DockerLaunchAction>
+    <DockerServiceUrl>{Scheme}://localhost:{ServicePort}/swagger</DockerServiceUrl>
+    <DockerServiceName>catalog.api</DockerServiceName>
   </PropertyGroup>
   <ItemGroup>
     <None Include="docker-compose.override.yml">
